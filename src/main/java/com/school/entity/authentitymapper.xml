@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.school.dao.Authdao">
+
+    <select id="authquery" resultType="Authentity" >
+        select * from t_auth
+    </select>
+
+    <insert id="authinsert" parameterType="Authentity">
+        insert into t_auth(aname,pid,amark,path,bottonauth)
+        VALUES (#{aname},#{pid}，#{amark},#{path},#{bottonauth})
+    </insert>
+
+
+
+</mapper>

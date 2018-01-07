@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.school.dao.Userdao">
+
+    <select id="login" resultType="Userentity">
+       select * from t_user where uname=#{uname} and upwd=#{upwd}
+    </select>
+
+    <!--<insert id="add" parameterType="Student">-->
+        <!--insert into student-->
+        <!--VALUES (#{id},#{name},#{password})-->
+    <!--</insert>-->
+
+    <!--<delete id="del" parameterType="int">-->
+        <!--DELETE  FROM  student where id=#{id}-->
+    <!--</delete>-->
+
+    <!--<update id="update" parameterType="Student">-->
+        <!--UPDATE  student SET name=#{name},password=#{password} where id=#{id}-->
+    <!--</update>-->
+</mapper>
